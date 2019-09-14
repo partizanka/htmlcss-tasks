@@ -1,0 +1,118 @@
+/* Desctop */
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.red {
+  width: 40%;
+  height: 10vh;
+  background: #ff0000;
+}
+
+.orange {
+  width: 60%;
+  height: 10vh;
+  background: #ffa500;
+}
+
+.green {
+  width: 100%;
+  height: 70vh;
+  background: #008000;
+}
+
+.brown {
+  width: 33.33%;
+  height: 20vh;
+  background: #583d2b;
+}
+
+.blue {
+  width: 33.33%;
+  height: 20vh;
+  background: #0000ff;
+}
+
+.purple {
+  width: 33.33%;
+  height: 20vh;
+  background: #800080;
+}
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) {
+  /* iPad */
+  .red {
+    width: 100%;
+    height: 70vh;
+    order: 3;
+  }
+  
+  .orange {
+    width: 40%;
+    height: 10vh;
+    order: 1;
+  }
+  
+  .green {
+    width: 50%;
+    height: 20vh;
+    order: 4;
+  }
+  
+  .brown {
+    display: none;
+  }
+  
+  .blue {
+    width: 50%;
+    height: 20vh;
+    order: 5;
+  }
+  
+  .purple {
+    width: 60%;
+    height: 10vh;
+    order: 2;
+  }
+}
+
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) {
+  /* iPhone 6 */
+  .red {
+    width: 100%;
+    height: 70vh;
+    order: 3;
+  }
+
+  .orange,
+  .brown,
+  .blue {
+    display: none;
+  }
+  
+  .green {
+    width: 100%;
+    height: 15vh;
+    order: 1;
+  }
+  
+  .purple {
+    width: 100%;
+    height: 15vh;
+    order: 2;
+  }
+}
