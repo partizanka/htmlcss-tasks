@@ -1,0 +1,17 @@
+.title span {
+  color: blue;
+}
+
+.ordinary {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+
+.second-marker {
+  list-style-type: disc;
+}
+
+.third-marker {
+  list-style-type: square;
+}
