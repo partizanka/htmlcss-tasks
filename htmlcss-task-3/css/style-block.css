@@ -1,0 +1,50 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block;
+  border: 5px solid white;
+  box-sizing: border-box;
+}
+
+.block-header .col-1 {
+  float: left;
+  width: 50%;
+  height: 10vh;
+  background-color: orange;
+}
+
+.block-header .col-2 {
+  float: right;
+  width: 50%;
+  height: 10vh;
+  background-color: orange;
+}
+
+.block-main {
+  clear: both;
+}
+
+.block-main .col-1 {
+  width: 100vw;
+  height: 70vh;
+  background-color: greenyellow;
+}
+
+.top-footer div {
+  float: right;
+  width: 33.3%;
+  height: 10vh;
+  background-color: blue;
+}
+
+.bottom-footer div {
+  float: right;
+  width: 25%;
+  height: 10vh;
+  background-color: grey;
+}
