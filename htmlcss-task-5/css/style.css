@@ -1,0 +1,152 @@
+html,
+body {
+  background: #d3d3d3;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.main-header {
+  margin: 0 auto;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 5%;
+}
+
+.logo,
+.search {
+  width: 400px;
+  text-align: center;
+  background: #00cac0;
+  padding: 30px;
+}
+
+.nav-block {
+  background: #fff;
+  padding: 20px 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  max-width: 1500px;
+  padding: 0;
+  margin: 0 5%;
+}
+
+.nav-item {
+  background: #00cac0;
+  padding: 10px 20px;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.sidebar {
+  width: 400px;
+}
+
+.main-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar .nav-list {
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0;
+}
+
+.sidebar .nav-item {
+  margin: 20px 0;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 5% 0 0;
+}
+
+.img {
+  margin: 5% 0 0 3%;
+}
+
+.img-item {
+  width: 250px;
+  height: 250px;
+  border: 3px solid #00cac0;
+  border-radius: 50%;
+}
+
+.main-footer {
+  padding: 20px 0;
+  background: #00cac0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1120px) {
+
+  .logo,
+  .search {
+    width: 280px;
+  }
+
+  .main-content {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+  .top-header {
+    justify-content: space-around;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h1, h2 {
+    font-size: 14px;
+  }
+
+  .logo,
+  .search {
+    width: 100px;
+    padding: 10px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .nav-list {
+    max-width: 700px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .nav-item {
+    background: #00cac0;
+    padding: 5px;
+  }
+
+  .nav-link {
+    font-size: 10px;
+  }
+
+  .sidebar {
+    width: 100px;
+  }
+
+  .img-item {
+    width: 150px;
+    height: 150px;
+  }
+}
