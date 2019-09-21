@@ -7,8 +7,8 @@ function off_menu() {
 }
 
 function testInput() {
-  var btnSubmit = document.getElementById('btn'); 
-  btnSubmit.setAttribute('disabled', 'disabled');
+  var b = document.getElementById('btn'); 
+  b.setAttribute('disabled', 'disabled');
   document.getElementById('btn').style.animation='btnInvalid 3s';
   document.getElementById('btn').style.background='#b4b9bb';
 }
