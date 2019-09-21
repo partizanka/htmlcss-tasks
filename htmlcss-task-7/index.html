@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Задание 4</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/mine.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <div class="top-header">
+      <section class="logo">
+        <h1>LOGO</h1>
+      </section>
+      <section class="search">
+        <h2>Блок поиска</h2>
+      </section>
+    </div>
+    <nav class="nav-block">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Пункт 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Пункт 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Пункт 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Пункт 4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Пункт 5</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Пункт 6</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-page">
+    <button class="on-nav" onclick="on_menu()">Menu</button>
+    <aside class="sidebar" id="sidebar">
+      <button class="off-nav" onclick="off_menu()">Close</button>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Блок 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Блок 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Блок 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Блок 4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Блок 5</a>
+        </li>
+      </ul>
+    </aside>
+    <section class="main-content">
+      <div class="letter">
+        <div class="img">
+          <img class="img-item cat2" src="img/2.jpg" alt="КотоМаркиза">
+        </div>
+        <form action="#" method="post">
+          <div class="contact-item">
+            <label class="contact-label" for="name">Ваше имя:</label>
+            <input class="contact-input" type="text" name="name" placeholder="Представьтесь, пожалуйста" id="name"oninvalid="testInput()" required>
+          </div>
+          <div class="contact-item">
+            <label class="contact-label" for="email">Ваш e-mail:</label>
+            <input class="contact-input" type="email" name="email" placeholder="Дляотправки ответа" id="email" oninvalid="testInput()" required>
+          </div>
+          <div class="contact-item">
+            <label class="contact-label" for="tel">Ваш телефон:</label>
+            <input class="contact-input" type="tel" name="tel" placeholder="Дляальтернативной связи" id="tel" oninvalid="testInput()" required>
+          </div>
+          <div class="contact-item">
+            <label class="contact-label" for="message">Текст письма:</label>
+            <textarea class="contact-input" name="message" placeholder="В свободной форме" id="message" rows="5" oninvalid="testInput()" required><textarea>
+          </div>
+          <input class="btn" id="btn" type="submit" name="btn" value="Отправить">
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <section class="footer-content">
+      <h2>Подвал</h2>
+    </section>
+  </footer>
+</body>
+</html>
