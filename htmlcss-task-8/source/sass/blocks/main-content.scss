@@ -1,0 +1,21 @@
+.main-content {
+  flex-wrap: wrap;
+  max-width: 1000px;
+  padding: 0 10px;
+  @include flex;
+}
+
+@include tablet {
+
+  .main-content {
+    padding: 0 20px;
+  }
+}
+
+@include phone {
+
+  .main-content {
+    flex-direction: column;
+    @include push-auto;
+  }
+}

@@ -1,0 +1,38 @@
+.main-header {
+  @include push-auto;
+
+  &__top %for-grids {
+    max-width: 1440px;
+    @include flex;
+    @include push-auto;
+  }
+
+  &__item {
+    width: 400px;
+    text-align: center;
+    background: $block-background;
+    padding: 30px;
+  }
+}
+
+@include tablet {
+
+  .main-header__item {
+    width: 280px;
+  }
+}
+
+@include phone {
+
+  .main-header__top {
+    max-width: 700px;
+    @include flex;
+    @include push-auto;
+  }
+
+  .main-header__item {
+    width: 100px;
+    font-size: 14px;
+    padding: 10px;
+  }
+}

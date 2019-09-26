@@ -1,0 +1,7 @@
+html,
+body {
+  color: $text-color;
+  background: $main-background;
+  @include reset-space;
+  @include push-auto;
+}

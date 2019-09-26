@@ -1,0 +1,20 @@
+.sidebar {
+  width: 330px;
+}
+
+.sidebar ul {
+  justify-content: flex-start;
+  flex-direction: column;
+  @include reset-space;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+@include phone {
+
+  .sidebar {
+    width: 100px;
+  }
+}
