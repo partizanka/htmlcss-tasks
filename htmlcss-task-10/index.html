@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task 10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="text-center">Cars</h1>
+  <button class="btn btn-primary" id="addCar">Добавить автомобиль</button>
+  <table id="table-result">
+    <tr id="tr-1">
+      <td>Марка автомобиля</td>
+      <td></td>
+    </tr>
+    <tr id="tr-2">
+      <td>Модель</td>
+      <td></td>
+    </tr>
+    <tr id="tr-3">
+      <td>Год выпуска</td>
+      <td></td>
+    </tr>
+    <tr id="tr-4">
+      <td>Цвет</td>
+      <td></td>
+    </tr>
+    <tr id="tr-5">
+      <td>Тип кузова</td>
+      <td></td>
+    </tr>
+    <tr id="tr-6">
+      <td>Тип топлива</td>
+      <td></td>
+    </tr>
+    <tr id="tr-7">
+      <td>Цена</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <button class="btn btn-dark" id="button-table">Закрыть</button>
+      </th>
+    </tr>
+  </table>
+  <!-- используем для того, чтобы не отправлять форму => не обновлять страницу -->
+  <form class="form-employ" id="myForm" onsubmit="return false;">
+
+    <div class="form-group row">
+        <div class="col-sm-9">
+      <label class="col-sm-2 form-label" for="manufacture">Марка автомобиля</label>
+        <input class="form-control" type="text" id="manufacture" name="manufacture" required pattern="^[a-zA-Zа-яА-Я]+$">
+      </div>
+      <div class="col-sm-9">
+      <label class="col-sm-2 form-label" for="model">Модель</label>
+        <input class="form-control" type="text" id="model" name="model" required pattern="^[a-zA-Zа-яА-Я]+$">
+      </div>
+      <div class="col-sm-9">
+      <label class="col-sm-2 form-label" for="year">Год выпуска</label>
+        <input type="number" class="form-control" min="1500" max="3000" id="year" name="year" maxlength="4" required pattern="^[0-9]+$">
+      </div>
+      <div class="col-sm-9">
+      <label class="col-sm-2 form-label" for="color">Цвет</label>
+        <input class="form-control" type="text" id="color" name="color" required pattern="^[a-zA-Zа-яА-Я]+$">
+      </div>
+      <div class="col-sm-9">
+      <label class="col-sm-2 form-label" for="body">Тип кузова</label>
+      <input class="form-control" type="text" id="body" name="body" required pattern="^[a-zA-Zа-яА-Я]+$">
+      </div>
+
+      <div class="col-sm-9">
+      <label class="col-sm-2 form-label" for="fuel">Тип топлива</label>
+        <input class="form-control" type="text" id="fuel" name="fuel" required pattern="^[a-zA-Zа-яА-Я\s]+$">
+      </div>
+
+      <div class="col-sm-9">
+        <label class="col-sm-2 form-label" for="cost">Цена</label>
+        <input type="number" class="form-control" id="cost" name="cost" maxlength="9" required pattern="^[0-9]+$">
+      </div>
+    </div>
+    <button class="btn btn-primary btn-submit" id="button-get">Отправить</button>
+    <button class="btn btn-primary btn-submit" id="button-save">Сохранить</button>
+  </form>
+
+  <table id="table">
+    <tr>
+      <th>Марка автомобиля</th>
+      <th>Модель</th>
+      <th>Год выпуска</th>
+      <th>Цвет</th>
+      <th>Тип кузова</th>
+      <th>Настройки</th>
+    </tr>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
