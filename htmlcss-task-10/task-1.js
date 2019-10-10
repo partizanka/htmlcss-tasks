@@ -1,6 +1,6 @@
 // Task 1
 
-term = {
+var term = {
   Canada: 10,
   Germany: 13,
   Spain: 22
@@ -11,4 +11,4 @@ for (var key in term) {
   sum += term[key];
 }
 
-alert(sum/2);
+console.log(sum/2);
