@@ -11,4 +11,6 @@ for (var key in term) {
   sum += term[key];
 }
 
-console.log(sum/2);
+var item = Object.keys(term).length;
+
+console.log(sum/item);
