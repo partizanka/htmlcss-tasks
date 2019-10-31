@@ -16,6 +16,9 @@
     justify-content: center;
 }
 
-.hide {
-    display: none;
+td.text {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    padding: 100px;
 }

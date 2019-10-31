@@ -9,16 +9,16 @@
     <title>Поиск</title>
 </head>
 
-<body>
+<body id="elem">
     <!-- Хэдер -->
     <header class="main-header">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <!-- Строка поиска -->
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" id="search" type="text" placeholder="Пиши тут..." aria-label="Пиши тут...">
-                        <button class="btn btn-outline-success my-2 my-sm-0" id='btn' type="submit" onclick="searchValue()">Поиск</button>
+                    <form class="form-inline" id="search-value">
+                        <input class="form-control mr-sm-2" id="search-item" name="n" type="text" placeholder="Пиши тут..." aria-label="Пиши тут...">
+                        <button class="btn btn-outline-success my-2 my-sm-0" id="search" type="button" onclick="searchHundler()">Поиск</button>
                     </form>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                                 <th scope="col">Цена</th>
                             </tr>
                         </thead>
-                        <tbody class="list">
+                        <tbody class="list" id="body-item">
                             <tr>
                                 <td>Opel</td>
                                 <td>Черный</td>
@@ -49,13 +49,13 @@
                                 <td>Mazda</td>
                                 <td>Красный</td>
                                 <td>2018</td>
-                                <td>19 000</td>
+                                <td>19000</td>
                             </tr>
                             <tr>
                                 <td>Audi</td>
                                 <td>Белый</td>
                                 <td>2009</td>
-                                <td>11 500</td>
+                                <td>11500</td>
                             </tr>
                             <tr>
                                 <td>Volkswagen</td>
@@ -67,13 +67,49 @@
                                 <td>BMW</td>
                                 <td>Красный</td>
                                 <td>2012</td>
-                                <td>16 500</td>
+                                <td>16500</td>
                             </tr>
                             <tr>
                                 <td>Volvo</td>
                                 <td>Черный</td>
                                 <td>2015</td>
-                                <td>14 900</td>
+                                <td>14900</td>
+                            </tr>
+                            <tr>
+                                <td>Renault</td>
+                                <td>Черный</td>
+                                <td>2014</td>
+                                <td>10600</td>
+                            </tr>
+                            <tr>
+                                <td>Mazda</td>
+                                <td>Белый</td>
+                                <td>2000</td>
+                                <td>5000</td>
+                            </tr>
+                            <tr>
+                                <td>Nissan</td>
+                                <td>Зелёный</td>
+                                <td>2009</td>
+                                <td>9500</td>
+                            </tr>
+                            <tr>
+                                <td>Volkswagen</td>
+                                <td>Красный</td>
+                                <td>2001</td>
+                                <td>4000</td>
+                            </tr>
+                            <tr>
+                                <td>BMW</td>
+                                <td>Серебристый</td>
+                                <td>1998</td>
+                                <td>3600</td>
+                            </tr>
+                            <tr>
+                                <td>Audi</td>
+                                <td>Синий</td>
+                                <td>2012</td>
+                                <td>11000</td>
                             </tr>
                         </tbody>
                     </table>
