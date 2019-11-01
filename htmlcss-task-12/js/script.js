@@ -1,43 +1,41 @@
-// Реализуйте функцию поиска с добавлением параметра по умолчанию:
+const searchHandler = () => {
+    const tableBody = document.getElementById('body-item');
 
-// создайте в хедере страницы поле для поиска и кнопку, по нажатии на которую начинается поиск. 
+    const tableRows = tableBody.children;
 
-// реализуйте поиск объектов. При запуске поиска с пустым полем поиск должен вывести сообщение "Ничего не найдено!".
+    const arrFormData = getFormValue();
+    getTdValue(arrFormData, tableRows);
+    testInput();
+}
 
-// реализуйте отображение результатов поиска на странице 
+btn.addEventListener('click', searchHandler);
 
-const searchHundler = () => {
+const getFormValue = () => {
 
-    const $searchvalue = document.getElementById('search-value');
-    const $inputvalue = document.getElementById('search-item');
-    const $tbody = document.getElementById('body-item');
-    const $tr = $tbody.children;
-
-    const $valueinputs = $searchvalue.children;
-
-    let arrformdata = [];
-
-    for (let input of $valueinputs) {
-        arrformdata.push(input.value.toUpperCase());
+    const valueInput = document.getElementById('search-value').children;
+    let arrFormData = [];
+    for (let input of valueInput) {
+        arrFormData.push(input.value.toUpperCase());
     }
+    return arrFormData;
+}
 
-    let arrtrdata = [];
+const getTdValue = (arrFormData, tableRows) => {
 
-    for (let value of $tr) {
+    let arrRowsData = [];
+
+    for (let value of tableRows) {
 
         const item = value;
         const td = value.children;
 
         for (let value of td) {
-            arrtrdata.push(value.textContent);
+            arrRowsData.push(value.textContent);
         }
 
-        let tdarray = [td[0].textContent.toUpperCase(), td[1].textContent.toUpperCase(), td[2].textContent.toUpperCase(), td[3].textContent.toUpperCase()];
+        let tdArray = [td[0].textContent.toUpperCase(), td[1].textContent.toUpperCase(), td[2].textContent.toUpperCase(), td[3].textContent.toUpperCase()];
 
-        let status = tdarray.includes(arrformdata[0]);
-
-        console.log(status);
-        console.log(item);
+        let status = tdArray.includes(arrFormData[0]);
 
         if (status == true) {
             item.style.display = 'table-row';
@@ -45,8 +43,15 @@ const searchHundler = () => {
             item.style.display = 'none';
         }
     }
+    return arrRowsData;
+}
 
-    if ($inputvalue.value == "") {
-        document.getElementById('body-item').innerHTML = '<tr><td class="text" colspan="4">Ничего не найдено!</td></tr>';
+const testInput = () => {
+
+    const inputValue = document.getElementById('search-item');
+    const tableBody = document.getElementById('body-item');
+
+    if (inputValue.value == "") {
+        tableBody.innerHTML = '<tr><td class="text" colspan="4">Ничего не найдено!</td></tr>';
     }
 }
